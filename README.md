@@ -19,7 +19,11 @@ python 2.7.9
 
 To build the modetrap binary file, type
 
+<<<<<<< HEAD
     make modetrap_sub
+=======
+make modetrap_sub
+>>>>>>> parent of a9300c7... Update README.md
 
 This creates the file "modetrap_sub.so". 
 
@@ -28,11 +32,19 @@ This creates the file "modetrap_sub.so".
 To start the application type 
 <<<<<<< HEAD
 
+<<<<<<< HEAD
     python modetrap_slider.py 1
 
 for the one bead case, or 
 
     python modetrap_slider.py 2
+=======
+python modetrap_slider.py 1
+
+for the one bead case, or 
+
+python modetrap_slider.py 1
+>>>>>>> parent of a9300c7... Update README.md
 
 for the two bead case. Click on the cases and adjust the sliders to reproduce the frequency spacing patterns shown, commonly referred to as _mode trapping_.
 =======
