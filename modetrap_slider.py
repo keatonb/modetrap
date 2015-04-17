@@ -36,7 +36,7 @@ def mode_wrap(n1,n2,xpert):
     #ap=ap[iargs]
     #wp=wp[iargs]
     #res = modetrap_sub.modetrap(n1,n2,xp,63ap,wp)
-    res = modetrap_sub.modetrap(n1,n2,xp,.22,.33)
+    res = modetrap_sub.modetrap(n1,n2,xp,.63,.03)
     return res
 
 # Calculate the forward period difference from a set of consecutive periods.
@@ -111,7 +111,8 @@ per,dp = dp_calc(periods)
 l, = plot(per,dp, 'ro-', lw=2, color='red')
 
 exampledata = np.loadtxt('exampledata.txt')
-per0, dp0 = dp_calc(exampledata[:,1])
+per0 = exampledata[:,0]
+dp0 = exampledata[:,1]
 l0, = plot(per0,dp0, 'ko--', lw=3, color='black', markersize=10, mfc='none')
 
 axis([x1lim, x2lim, y1lim, y2lim])
